@@ -1,0 +1,47 @@
+###Get All
+GET http://localhost:3000/api/salaries
+Accept: application/json
+x-api-key: rahasia
+
+
+###GetById
+GET http://localhost:3000/api/salaries/5
+Accept: application/json
+x-api-key: rahasia
+
+
+###Create
+PUT http://localhost:3000/api/salaries/4
+Accept: application/json
+Content-Type: application/json
+x-api-key: rahasia
+
+{
+  "role": "UI/UX",
+  "company": "Efish",
+  "expr": 4,
+  "amount": 15000000
+
+}
+
+###Update
+PUT http://localhost:3000/api/salaries/2
+Accept: application/json
+Content-Type: application/json
+
+{
+  "role": "Frontend Developer",
+  "company": "Shopee",
+  "expr": 3,
+  "amount": 13000000
+}
+
+###Delete
+DELETE http://localhost:3000/api/salaries/4
+Accept: application/json
+x-api-key: rahasia
+
+###Upload
+GET http://localhost:3000/api/upload
+Accept: application/json
+x-api-key: rahasia
